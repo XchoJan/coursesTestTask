@@ -13,7 +13,7 @@ const SelectTheme: React.FC<Props> = ({ data, selectedTag, onSelectTag }) => {
 
     const getAllTags = (): string[] => {
         const allTags = data.flatMap(course => course.tags);
-        return Array.from(new Set(allTags)); // уникальные теги
+        return Array.from(new Set(allTags)); 
     };
 
     const handleSelect = (tag: string | null) => {
